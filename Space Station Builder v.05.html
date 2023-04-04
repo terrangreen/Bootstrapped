@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrapped: From Space Junk to Space Station</title>
+	<link rel="stylesheet" href="layout.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Bootstrapped: From Space Junk to Space Station</h1>
+			<p id="status">Status: Initializing...</p>
+		</header>
+		<main>
+			<div class="container">
+				<div class="box-column-1">
+					<div class = "box-resources">
+						<section id="resourcesList">
+							<h2>Resources</h2>
+							<span class="align-left">Credits:</span><span class="align-right" id="creditsListItem">0</span><br><br>
+							<span class="align-left">Space Junk:</span><span class="align-right" id="spaceJunkListItem">0</span><br><br>
+							<span class="align-left"></span>Metal:</span><span class="align-right" id="metalListItem">0</span><br><br>
+							<span class="align-left">Plastic:</span><span class="align-right" id="plasticListItem">0</span><br><br>
+							<button id="collectSpaceJunkButton">Collect Space Junk</button>
+							<button id="sellSpaceJunkButton">Send Space Junk to Earth</button>
+						</section>
+					</div>
+					<div class="box-license">
+						<section id="license">
+							<h2>Station License</h2>
+							<span class="align-left">Current level:</span>
+							<span class="align-right" id="licenseLevel">1</span><br>
+							<button id="upgradeLicenseButton">Upgrade License</button>
+						</section>
+					</div>
+					<div class = "box-workers">
+						<section id="workers">
+							<h2><span class="align-left">Workers</span></h2>
+							<span class="align-right"><span id="workersAvailable">0</span>/<span id="workersTotal">0</span></span><br><br>
+							<button id="hirewWorkersButton">Hire worker</button>
+					</div>
+				</div>
+				<div class="box-column-2">
+					<div class="box-modules-area">
+						<div class = "box-modules-1">
+							<div>
+								<h2>Modules Available</h2>
+								<ul id = "modulesAvailableList"></ul>
+							</div>
+						</div>
+						<div class = "box-modules-2">
+							<div>
+								<h2>Modules Purchased</h2>
+								<ul id="modulesPurchasedList"></ul>
+							</div>
+						</div>
+						<div class = "box-modules-3">
+							<div>
+								<h2>Modules Installed</h2>
+								<ul id="modulesInstalledList"></ul>
+							</div>
+						</div>
+					</div>
+					<div class="station-layout">
+						<h2>Station Layout</h2>
+						<canvas id="station-canvas"></canvas>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>Bootstrapped: From Space Junk to Space Station</p>
+		</footer>
+	</div>
+
+	
+	<script src="game.js"></script>
+</body>
+</html>
+

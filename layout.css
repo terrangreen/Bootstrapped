@@ -1,0 +1,160 @@
+body {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #222;
+	color: #fff;
+}
+
+#wrapper {
+	gap: 20px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	grid-template-rows: min-content;
+	padding: 25px;
+	border: 5px solid gray;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+header h1 {
+	font-size: 3em;
+	margin: 0;
+}
+
+#status {
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+
+#resources {
+	float: left;
+	margin-right: 20px;
+}
+
+#resources h2 {
+	font-size: 2em;
+	margin-top: 0;
+}
+
+#resources p {
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+
+#modules {
+	overflow: hidden;
+}
+
+#modules h2 {
+	font-size: 2em;
+	margin-top: 0;
+}
+
+
+.module {
+	background-color: #444;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.module h3 {
+	font-size: 1.5em;
+	margin-top: 0;
+}
+
+.module p {
+	margin-top: 10px;
+	font-size: 1.2em;
+}
+
+.module-btn {
+	margin-top: 10px;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #4CAF50;
+	color: #fff;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+
+.module-btn:hover {
+	background-color: #3E8E41;
+}
+
+
+/* Set grid layout for page */
+
+.box-column-1 {
+	grid-template-rows: min-content auto;
+}
+
+.box-resources {
+	grid-row: 1;
+	grid-column: 1;
+}
+
+.box-license {
+	grid-row: 2;
+	grid-column: 1;
+}
+
+.box-workers {
+	grid-row: 3;
+	grid-column: 1;
+}
+
+.box-column-2 {
+	grid-template-rows: minmax(50px, 1fr) min-content;
+}
+
+.box-modules-area {
+	display: grid;
+	grid-template-rows: min-content auto;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.box-modules-1 {
+	grid-column: 1;
+	overflow-y: scroll;
+}
+
+.box-modules-2 {
+	grid-column: 2;
+	overflow-y: scroll;
+}
+
+.box-modules-3 {
+	grid-column: 3;
+	overflow-y: scroll;
+}
+
+/* Station layout */
+.station-layout {
+	grid-row: 2 / 3;
+	grid-column: 2 / 4;
+	border: solid gray;
+}
+
+.align-left {
+	float: left;
+}
+
+.align-right {
+	float: right;
+	padding-right: 10%;
+}
+
+.module-item {
+	border: 3px solid gray;
+	padding: 10px;
+	cursor: move;
+}
